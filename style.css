@@ -51,17 +51,17 @@ body {
 }
 
 .todo_ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 .todo_li,
 .todo__title  {
-    list-style:none;
+    list-style: none;
 }
 
 .todo_inp,button{
-    outline:none;
+    outline: none;
 }
 
 button {
@@ -161,14 +161,14 @@ li >    input[type="text"] {
 
 /* Edit Task */
 ul li input[type=text] {
-    display:none
+    display: none
 }
 
 ul li.todo__edit_mode input[type=text] {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 ul li.todo__edit_mode label {
-    display:none;
+    display: none;
 }
