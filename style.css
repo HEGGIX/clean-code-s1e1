@@ -1,4 +1,9 @@
 /* Basic Style */
+*
+li{
+    vertical-align: middle;
+}
+
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -37,9 +42,12 @@ body {
 }
 
 .todo__task {
-    width: 56%;
     display: inline-block;
     flex-grow: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 226px;
 }
 
 .todo__add_inp {
@@ -60,7 +68,8 @@ body {
     list-style: none;
 }
 
-.todo_inp,button{
+.todo_inp,
+.btn{
     outline: none;
 }
 
@@ -112,44 +121,34 @@ input[type="text"]:focus {
     margin: 0 0 20px;
 }
 
-
 /* Task list */
-li {
+.todo_li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-li > * {
-    vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
+.inp_checkbox {
     margin: 0 10px;
 }
 
-li > label {
+.todo__task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li >    input[type="text"] {
-    width: 226px;
-}
-
-.todo_delete img {
+.delete_img{
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.todo_delete img:hover {
+.delete_img:hover {
     transform: rotateZ(0);
 }
 
@@ -164,11 +163,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.todo__edit_mode input[type=text] {
+.todo__edit_mode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.todo__edit_mode label {
+.todo__edit_mode label {
     display: none;
 }

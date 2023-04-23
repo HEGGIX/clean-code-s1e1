@@ -19,31 +19,31 @@
   <div class="todo">
     <p><label for="todo__add" class="todo__add_label">Add Item</label>
       <div class="todo__add_inp">
-        <input id="todo__add" class="todo__task todo_inp" type="text"><button>Add</button>
+        <input id="todo__add" class="todo__task todo_inp" type="text"><button class="btn">Add</button>
       </div>
     </p>
     <h3 class="todo__title">Todo</h3>
     <ul id="todo__incomplete" class="todo_ul">
         <li class="todo_li">
-            <input type="checkbox" class="todo_inp"><label class="todo__task">Pay Bills</label>
-            <input type="text" class="todo__task todo_inp">
-            <button class="todo_edit">Edit</button>
-            <button class="todo_delete"><img src="./remove.svg" alt="remove-button"></button>
+            <input type="checkbox" class="todo_inp inp_checkbox"><label class="todo__task">Pay Bills</label>
+            <input type="text" class="todo__task todo_inp text">
+            <button class="todo_edit btn">Edit</button>
+            <button class="todo_delete btn"><img src="./remove.svg" alt="remove-button" class="delete_img"></button>
         </li>
         <li class="todo__edit_mode todo_li">
-            <input type="checkbox" class="todo_inp"><label class="todo__task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="todo__task todo_inp">
-            <button class="todo_edit">Save</button>
-            <button class="todo_delete"><img src="./remove.svg" alt="remove-button"></button>
+            <input type="checkbox" class="todo_inp inp_checkbox edit"><label class="todo__task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo__task todo_inp text">
+            <button class="todo_edit btn">Save</button>
+            <button class="todo_delete btn"><img src="./remove.svg" alt="remove-button" class="delete_img"></button>
         </li>
     </ul>
     <h3 class="todo__title">Completed</h3>
     <ul id="todo__completed" class="todo__completed todo_ul">
         <li class="todo_li">
-            <input type="checkbox" class="todo_inp" checked><label class="todo__task">See the Doctor</label>
-            <input type="text" class="todo__task todo_inp">
-            <button class="todo_edit">Edit</button>
-            <button class="todo_delete"><img src="./remove.svg" alt="remove-button"></button>
+            <input type="checkbox" class="todo_inp inp_checkbox" checked><label class="todo__task">See the Doctor</label>
+            <input type="text" class="todo__task todo_inp text">
+            <button class="todo_edit btn">Edit</button>
+            <button class="todo_delete btn"><img src="./remove.svg" alt="remove-button" class="delete_img"></button>
         </li>
     </ul>
   </div>

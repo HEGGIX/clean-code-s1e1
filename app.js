@@ -18,6 +18,7 @@ var completedTasksHolder=document.getElementById("todo__completed");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add("todo_li");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -32,11 +33,14 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    deleteButtonImg.classList.add("delete_img");
+
     label.innerText=taskString;
     label.className='todo__task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className = "inp_checkbox";
     editInput.type="text";
     editInput.className="todo__task";
 
@@ -123,7 +127,6 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
