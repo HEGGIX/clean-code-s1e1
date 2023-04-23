@@ -46,6 +46,10 @@ body {
     display: flex;
 }
 
+.todo__add_inp .todo__task{
+    width: 318px;
+}
+
 .todo_ul {
     margin:0;
     padding: 0px;
@@ -74,7 +78,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
+.todo__title,
 .todo__add_label {
     color: #333;
     font-weight: 700;
@@ -108,9 +112,6 @@ input[type="text"]:focus {
     margin: 0 0 20px;
 }
 
-input#todo__add {
-    width: 318px;
-}
 
 /* Task list */
 li {
