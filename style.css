@@ -1,5 +1,5 @@
 *
-li{
+li {
     vertical-align: middle;
 }
 
@@ -53,7 +53,7 @@ body {
     display: flex;
 }
 
-.todo__add_inp .todo__task{
+.todo__add_inp .todo__task {
     width: 318px;
 }
 
@@ -63,12 +63,12 @@ body {
 }
 
 .todo_li,
-.todo__title  {
+.todo__title {
     list-style: none;
 }
 
 .todo_inp,
-.btn{
+.btn {
     outline: none;
 }
 
