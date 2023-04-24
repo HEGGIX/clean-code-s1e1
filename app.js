@@ -42,13 +42,16 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className = "inp_checkbox";
     editInput.type="text";
-    editInput.className="todo__task";
+    editInput.classList.add("todo_inp");
+    editInput.classList.add("inp_edit");
+    editInput.className="todo__task todo_inp hide";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="todo_edit";
+    editButton.className="todo_edit btn";
 
     deleteButton.className="todo_delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButton.classList.add("btn");
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -97,8 +100,13 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
+        editBtn.classList.add("btn");
+        editInput.classList.remove("inp_edit");
     }else{
         editInput.value=label.innerText;
+        editInput.classList.add("todo_inp");
+        editBtn.classList.add("btn");
+        editInput.classList.add("inp_edit");
         editBtn.innerText="Save";
     }
 

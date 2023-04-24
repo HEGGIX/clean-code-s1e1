@@ -1,4 +1,3 @@
-/* Basic Style */
 *
 li{
     vertical-align: middle;
@@ -73,7 +72,7 @@ body {
     outline: none;
 }
 
-button {
+.btn {
     background: none;
     border: 0px;
     color: #888;
@@ -83,10 +82,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     color: #3a3A3a;
 }
-/* Heading */
+
 .todo__title,
 .todo__add_label {
     color: #333;
@@ -98,7 +97,7 @@ button:hover {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.todo_inp {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -111,17 +110,15 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.todo_inp:focus {
     color: #333;
 }
 
-/* New Task */
 .todo__add_label  {
     display: block;
     margin: 0 0 20px;
 }
 
-/* Task list */
 .todo_li {
     overflow: hidden;
     padding: 20px 0;
@@ -142,7 +139,7 @@ input[type="text"]:focus {
     width: 226px;
 }
 
-.delete_img{
+.delete_img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
@@ -152,18 +149,16 @@ input[type="text"]:focus {
     transform: rotateZ(0);
 }
 
-/* Completed */
 .todo__completed label {
     text-decoration: line-through;
     color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
+.hide {
     display: none;
 }
 
-.todo__edit_mode input[type=text] {
+.inp_edit {
     display: inline-block;
     width: 224px;
 }
